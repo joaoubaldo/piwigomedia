@@ -1,0 +1,172 @@
+# Copyright (C) 2011 PiwigoMedia
+# This file is distributed under the same license as the PiwigoMedia package.
+# Erkan <bravehearterkan@hotmail.com>, 2011
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PiwigoMedia Türkçe\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/piwigomedia\n"
+"POT-Creation-Date: 2010-12-19 15:59+0200\n"
+"PO-Revision-Date: 2011-02-22 02:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: Turkish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Turkish\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr "PiwigoMedia Ayarları"
+
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr "Temel Ayarlar"
+
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr "Piwigo Siteleri"
+
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr "Gerekli alan"
+
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr "Birden fazla Piwigo siteleri satır başına bir URL ekleyerek izin verilir."
+
+#: piwigomedia_admin.php:34
+msgid "You can select the default Piwigo site by placing its URL on top of the list."
+msgstr "Varsayılan Piwigo sitesinin URL'sini listenin en üstüne ekleyerek seçebilirsiniz."
+
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr "Sayfa başına resimler"
+
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr "Seçim ekranında sayfa başına gösterilecek resimlerin sayısı."
+
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr "Değişiklikleri kaydet"
+
+#: popup.php:34
+msgid "PiwigoMedia must be configured."
+msgstr "PiwigoMedya yapılandırılması gerekiyor."
+
+#: popup.php:35
+msgid "Error while reading from"
+msgstr "Okurken hata oluştu"
+
+#: popup.php:37
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr "PiwigoMedia yapılandırmasını kontrol ediniz ve tekrar deneyiniz."
+
+#: popup.php:38
+msgid "Error reading image information, please try again."
+msgstr "Resim bilgileri okumada hata, lütfen tekrar deneyin."
+
+#: popup.php:154
+msgid "Choose a site"
+msgstr "Bir Site Seç"
+
+#: popup.php:156
+msgid "Piwigo site:"
+msgstr "PiwigoMedia Ayarları"
+
+#: popup.php:167
+#: popup.php:183
+msgid "Select"
+msgstr "Seç"
+
+#: popup.php:170
+msgid "Select a category"
+msgstr "Bir Kategori Seç"
+
+#: popup.php:175
+msgid "Category:"
+msgstr "Kategori:"
+
+#: popup.php:193
+msgid "Select the images"
+msgstr "Resimleri seç"
+
+#: popup.php:239
+msgid "Customize"
+msgstr "Özelleştir"
+
+#: popup.php:241
+msgid "Alignment:"
+msgstr "Hizalama:"
+
+#: popup.php:242
+msgid "None"
+msgstr "Hiçbiri"
+
+#: popup.php:243
+msgid "Left"
+msgstr "Sol"
+
+#: popup.php:244
+msgid "Center"
+msgstr "Orta"
+
+#: popup.php:245
+msgid "Right"
+msgstr "Sağ"
+
+#: popup.php:248
+msgid "Link to:"
+msgstr "Bağlantısı:"
+
+#: popup.php:249
+msgid "Image page"
+msgstr "Resim sayfası"
+
+#: popup.php:250
+msgid "Fullsize image"
+msgstr "Tam boyut resim"
+
+#: popup.php:253
+msgid "Link target:"
+msgstr "Bağlantı Hedefi:"
+
+#: popup.php:254
+msgid "New window"
+msgstr "Yeni pencere"
+
+#: popup.php:255
+msgid "Same window"
+msgstr "Aynı pencere"
+
+#: popup.php:261
+msgid "Insert into post"
+msgstr "Yazı içine ekle"
+
+#: popup.php:267
+msgid "author website"
+msgstr "yapımcı websitesi"
+
+#. Plugin Name of the plugin/theme
+msgid "PiwigoMedia"
+msgstr "Piwigo Medya"
+
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://joaoubaldo.com"
+msgstr "http://joaoubaldo.com"
+
+#. Description of the plugin/theme
+msgid "This plugins allows media from a Piwigo site to be inserted into WordPress posts."
+msgstr "Bu eklenti ile Piwigo albüm sitenizdeki resimleri WordPress yazılarınızda kullanabileceksiniz."
+
+#. Author of the plugin/theme
+msgid "João C."
+msgstr "João C."
+

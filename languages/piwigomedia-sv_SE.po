@@ -1,0 +1,169 @@
+# Copyright (C) 2011 PiwigoMedia
+# This file is distributed under the same license as the PiwigoMedia package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PiwigoMedia 0.9.6\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/piwigomedia\n"
+"POT-Creation-Date: 2011-02-21 22:38:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-02-23 11:13+GMT\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr "PiwigoMedia inställningar"
+
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr "Primär inställningar"
+
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr "Piwigo webbplatser"
+
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr "Obligatoriskt fält"
+
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr "Flera Piwigo webbplatser kan beviljas genom att sätta in en address per rad."
+
+#: piwigomedia_admin.php:34
+msgid ""
+"You can select the default Piwigo site by placing its URL on top of the list."
+msgstr "Du kan välja standard Piwigo webbplats genom att placera dess webbadress på toppen av listan."
+
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr "Bilder per sida"
+
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr "Antal bilder att visa per sida, i urvalsmarkeringen."
+
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr "Spara ändringar"
+
+#: popup.php:34
+msgid "PiwigoMedia must be configured."
+msgstr "PiwigoMedia måste vara konfigurerade."
+
+#: popup.php:35
+msgid "Error while reading from"
+msgstr "Fel vid läsning från"
+
+#: popup.php:37
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr "Kontrollera PiwigoMedia konfigurationen och försök igen."
+
+#: popup.php:38
+msgid "Error reading image information, please try again."
+msgstr "Fel vid läsning bild information, var vänlig försök igen."
+
+#: popup.php:154
+msgid "Choose a site"
+msgstr "Välj webbplats"
+
+#: popup.php:156
+msgid "Piwigo site:"
+msgstr "Piwigo webbplats:"
+
+#: popup.php:167 popup.php:183
+msgid "Select"
+msgstr "Välj"
+
+#: popup.php:170
+msgid "Select a category"
+msgstr "Välj en ketegori"
+
+#: popup.php:175
+msgid "Category:"
+msgstr "Kategori:"
+
+#: popup.php:193
+msgid "Select the images"
+msgstr "Välj bilder"
+
+#: popup.php:239
+msgid "Customize"
+msgstr "Anpassa"
+
+#: popup.php:241
+msgid "Alignment:"
+msgstr "Justering:"
+
+#: popup.php:242
+msgid "None"
+msgstr "Ingen"
+
+#: popup.php:243
+msgid "Left"
+msgstr "Vänster"
+
+#: popup.php:244
+msgid "Center"
+msgstr "Center"
+
+#: popup.php:245
+msgid "Right"
+msgstr "Höger"
+
+#: popup.php:248
+msgid "Link to:"
+msgstr "Länk till:"
+
+#: popup.php:249
+msgid "Image page"
+msgstr "Bild sida"
+
+#: popup.php:250
+msgid "Fullsize image"
+msgstr "Full storleks bild"
+
+#: popup.php:253
+msgid "Link target:"
+msgstr "Länk mål:"
+
+#: popup.php:254
+msgid "New window"
+msgstr "Nytt fönster"
+
+#: popup.php:255
+msgid "Same window"
+msgstr "Samma fönster"
+
+#: popup.php:261
+msgid "Insert into post"
+msgstr "Infoga i inlägg"
+
+#: popup.php:267
+msgid "author website"
+msgstr "upphovsmanens hemsida"
+
+#. Plugin Name of the plugin/theme
+msgid "PiwigoMedia"
+msgstr "PiwigoMedia"
+
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://joaoubaldo.com"
+msgstr "http://joaoubaldo.com"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugins allows media from a Piwigo site to be inserted into WordPress "
+"posts."
+msgstr ""
+"Detta plugins låter media från en Piwigo webbplats ska infogas i WordPress "
+"posts."
+
+#. Author of the plugin/theme
+msgid "João C."
+msgstr "João C."

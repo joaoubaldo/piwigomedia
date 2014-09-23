@@ -1,0 +1,172 @@
+# Copyright (C) 2011 PiwigoMedia
+# This file is distributed under the same license as the PiwigoMedia package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PiwigoMedia 0.9.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/piwigomedia\n"
+"POT-Creation-Date: 2011-02-21 22:38:06+00:00\n"
+"PO-Revision-Date: 2011-02-21 22:46+0100\n"
+"Last-Translator: João C. <me@joaoubaldo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr "Configurações do PiwigoMedia"
+
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr "Configurações principais"
+
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr "Sites Piwigo"
+
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr "Campo obrigatório"
+
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr "Múltiplos sites Piwigo são suportados inserindo um URL por linha."
+
+#: piwigomedia_admin.php:34
+msgid "You can select the default Piwigo site by placing its URL on top of the list."
+msgstr "Para escolher o site Piwigo padrão, passe o seu URL para o topo da lista."
+
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr "Imagens por página"
+
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr "Número de imagens a apresentar por página na fase de selecção."
+
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr "Guardar alterações"
+
+#: popup.php:34
+msgid "PiwigoMedia must be configured."
+msgstr "O PiwigoMedia tem de ser configurado."
+
+#: popup.php:35
+msgid "Error while reading from"
+msgstr "Erro ao ler de"
+
+#: popup.php:37
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr "Por favor verifique as configurações do PiwigoMedia e tente novamente."
+
+#: popup.php:38
+msgid "Error reading image information, please try again."
+msgstr "Erro ao ler informação das imagens, por favor tente novamente."
+
+msgid "Loading..."
+msgstr "A carregar..."
+
+#: popup.php:154
+msgid "Choose a site"
+msgstr "Escolha um site"
+
+#: popup.php:156
+msgid "Piwigo site:"
+msgstr "Site Piwigo:"
+
+#: popup.php:167
+#: popup.php:183
+msgid "Select"
+msgstr "Escolher"
+
+#: popup.php:170
+msgid "Select a category"
+msgstr "Seleccione a categoria"
+
+#: popup.php:175
+msgid "Category:"
+msgstr "Categoria:"
+
+#: popup.php:193
+msgid "Select the images"
+msgstr "Escolha as imagens"
+
+#: popup.php:239
+msgid "Customize"
+msgstr "Personalize"
+
+#: popup.php:241
+msgid "Alignment:"
+msgstr "Alinhamento:"
+
+#: popup.php:242
+msgid "None"
+msgstr "Nenhum"
+
+#: popup.php:243
+msgid "Left"
+msgstr "À esquerda"
+
+#: popup.php:244
+msgid "Center"
+msgstr "Centrado"
+
+#: popup.php:245
+msgid "Right"
+msgstr "À direita"
+
+#: popup.php:248
+msgid "Link to:"
+msgstr "Link para:"
+
+#: popup.php:249
+msgid "Image page"
+msgstr "Página da imagem"
+
+#: popup.php:250
+msgid "Fullsize image"
+msgstr "Imagem original"
+
+#: popup.php:253
+msgid "Link target:"
+msgstr "Destino do link:"
+
+#: popup.php:254
+msgid "New window"
+msgstr "Nova janela"
+
+#: popup.php:255
+msgid "Same window"
+msgstr "Própria janela"
+
+#: popup.php:261
+msgid "Insert into post"
+msgstr "Inserir no artigo"
+
+#: popup.php:267
+msgid "author website"
+msgstr "site do autor"
+
+#. Plugin Name of the plugin/theme
+msgid "PiwigoMedia"
+msgstr "PiwigoMedia"
+
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://joaoubaldo.com"
+msgstr "http://joaoubaldo.com"
+
+#. Description of the plugin/theme
+msgid "This plugins allows media from a Piwigo site to be inserted into WordPress posts."
+msgstr "Este plugin permite a inserção de conteúdo alojado num site Piwigo em artigos do WordPress."
+
+#. Author of the plugin/theme
+msgid "João C."
+msgstr "João C."
+
+#~ msgid "Example: http://localhost/piwigo."
+#~ msgstr "Exemplo: http://localhost/piwigo."
+

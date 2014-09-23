@@ -1,0 +1,175 @@
+# Copyright (C) 2011 PiwigoMedia
+# This file is distributed under the same license as the PiwigoMedia package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PiwigoMedia 0.9.6\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/piwigomedia\n"
+"POT-Creation-Date: 2011-02-21 22:38:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dimitri Robert <dimitri.robert@libresavous.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+ 
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr "Réglages de PiwigoMedia"
+ 
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr "Réglages principaux"
+ 
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr "URL des galeries Piwigo"
+ 
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr "Requis"
+ 
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr "Vous pouvez gérer plusieurs galeries Piwigo en insérant une URL par ligne."
+ 
+#: piwigomedia_admin.php:34
+msgid ""
+"You can select the default Piwigo site by placing its URL on top of the list."
+msgstr " La première URL de la liste désigne la galerie par défaut."
+ 
+ 
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr "Images par page"
+ 
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr "Nombre d'images à afficher par page dans l'écran de sélection."
+ 
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+ 
+#: popup.php:34
+msgid "PiwigoMedia must be configured."
+msgstr "PiwigoMedia doit être configuré."
+ 
+#: popup.php:35
+msgid "Error while reading from"
+msgstr "Erreur pendant la lecture de"
+ 
+#: popup.php:37
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr "Veuillez vérifier votre configuration de PiwigoMedia et recommencez."
+ 
+#: popup.php:38
+msgid "Error reading image information, please try again."
+msgstr "Erreur lors de la lecture des informations de l'image, veuillez recommencer."
+ 
+#: popup.php:154
+msgid "Choose a site"
+msgstr "Choisissez une galerie"
+ 
+#: popup.php:156
+msgid "Piwigo site:"
+msgstr "Galerie Piwigo :"
+ 
+#: popup.php:167 popup.php:183
+msgid "Select"
+msgstr "Sélectionnez"
+ 
+#: popup.php:170
+msgid "Select a category"
+msgstr "Sélectionnez un album"
+ 
+#: popup.php:175
+msgid "Category:"
+msgstr "Album :"
+ 
+#: popup.php:193
+msgid "Select the images"
+msgstr "Sélectionnez les images"
+ 
+#: popup.php:239
+msgid "Customize"
+msgstr "Personnalisation"
+ 
+msgid "Insert:"
+msgstr "Insérez :"
+ 
+msgid "Thumbnail"
+msgstr "la vignette"
+ 
+#: popup.php:241
+msgid "Alignment:"
+msgstr "Alignement horizontal :"
+ 
+#: popup.php:242
+msgid "None"
+msgstr "Aucun"
+ 
+#: popup.php:243
+msgid "Left"
+msgstr "À gauche"
+ 
+#: popup.php:244
+msgid "Center"
+msgstr "Centré"
+ 
+#: popup.php:245
+msgid "Right"
+msgstr "À droite"
+ 
+#: popup.php:248
+msgid "Link to:"
+msgstr "Le lien pointe vers :"
+ 
+#: popup.php:249
+msgid "Image page"
+msgstr "la page de l'image dans la galerie"
+ 
+#: popup.php:250
+msgid "Fullsize image"
+msgstr "l'image en taille d'origine"
+ 
+#: popup.php:253
+msgid "Link target:"
+msgstr "Le lien s'ouvre dans :"
+ 
+#: popup.php:254
+msgid "New window"
+msgstr "une nouvelle fenêtre"
+ 
+#: popup.php:255
+msgid "Same window"
+msgstr "la même fenêtre"
+ 
+#: popup.php:261
+msgid "Insert into post"
+msgstr "Insérer les photos dans l'article ou la page"
+ 
+#: popup.php:267
+msgid "author website"
+msgstr "Auteur du site Web"
+ 
+#. Plugin Name of the plugin/theme
+msgid "PiwigoMedia"
+msgstr ""
+ 
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://joaoubaldo.com"
+msgstr ""
+ 
+#. Description of the plugin/theme
+msgid ""
+"This plugins allows media from a Piwigo site to be inserted into WordPress "
+"posts."
+msgstr "Cette extension vous permet d'insérer dans Wordpress des images venant de galeries Piwigo."
+ 
+#. Author of the plugin/theme
+msgid "João C."
+msgstr ""
+

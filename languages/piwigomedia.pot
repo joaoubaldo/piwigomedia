@@ -1,0 +1,158 @@
+# Copyright (C) 2012 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://b.joaoubaldo.com/my-projects/piwigomedia\n"
+"POT-Creation-Date: 2012-10-02 11:19:02+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr ""
+
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr ""
+
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr ""
+
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr ""
+
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr ""
+
+#: piwigomedia_admin.php:34
+msgid ""
+"You can select the default Piwigo site by placing its URL on top of the list."
+msgstr ""
+
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr ""
+
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr ""
+
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr ""
+
+#: popup.php:33
+msgid "PiwigoMedia must be configured."
+msgstr ""
+
+#: popup.php:37
+msgid "Error while reading from"
+msgstr ""
+
+#: popup.php:38
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr ""
+
+#: popup.php:39
+msgid "Error reading image information, please try again."
+msgstr ""
+
+#: popup.php:40
+msgid "Loading..."
+msgstr ""
+
+#: popup.php:80
+msgid "Choose a site"
+msgstr ""
+
+#: popup.php:83
+msgid "Piwigo site:"
+msgstr ""
+
+#: popup.php:91 popup.php:99
+msgid "Select"
+msgstr ""
+
+#: popup.php:95
+msgid "Select a category"
+msgstr ""
+
+#: popup.php:98
+msgid "Category:"
+msgstr ""
+
+#: popup.php:106
+msgid "Select the images"
+msgstr ""
+
+#: popup.php:118
+msgid "Customize"
+msgstr ""
+
+#: popup.php:120
+msgid "Insert:"
+msgstr ""
+
+#: popup.php:121
+msgid "Thumbnail"
+msgstr ""
+
+#: popup.php:122 popup.php:134
+msgid "Fullsize image"
+msgstr ""
+
+#: popup.php:125
+msgid "Alignment:"
+msgstr ""
+
+#: popup.php:126
+msgid "None"
+msgstr ""
+
+#: popup.php:127
+msgid "Left"
+msgstr ""
+
+#: popup.php:128
+msgid "Center"
+msgstr ""
+
+#: popup.php:129
+msgid "Right"
+msgstr ""
+
+#: popup.php:132
+msgid "Link to:"
+msgstr ""
+
+#: popup.php:133
+msgid "Image page"
+msgstr ""
+
+#: popup.php:137
+msgid "Link target:"
+msgstr ""
+
+#: popup.php:138
+msgid "New window"
+msgstr ""
+
+#: popup.php:139
+msgid "Same window"
+msgstr ""
+
+#: popup.php:145
+msgid "Insert into post"
+msgstr ""
+
+#: popup.php:150
+msgid "author website"
+msgstr ""

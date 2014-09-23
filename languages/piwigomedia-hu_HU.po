@@ -1,0 +1,168 @@
+# Copyright (C) 2011 PiwigoMedia
+# This file is distributed under the same license as the PiwigoMedia package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PiwigoMedia 0.9.6\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/piwigomedia\n"
+"POT-Creation-Date: 2011-02-21 22:38:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-02-22 08:36+0100\n"
+"Last-Translator: samli <gyula54@gmail.com>\n"
+"Language-Team: PIWIGO TRANSLATION TEAM\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr "PiwigoMedia beállítások"
+
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr "Alapvető beállítások"
+
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr "Piwigo oldalak"
+
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr "szükséges"
+
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr "Több Piwigo oldal is megadható, soronként egy URL. "
+
+#: piwigomedia_admin.php:34
+msgid "You can select the default Piwigo site by placing its URL on top of the list."
+msgstr "Az alapértelmezett Piwigo oldal URL-je a lista tetejére."
+
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr "Kép/oldal"
+
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr "Egy oldalon megjelenítendő képek száma."
+
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr "Változások mentése"
+
+#: popup.php:34
+msgid "PiwigoMedia must be configured."
+msgstr "A PiwigoMedia bővítményt be kell állítani!"
+
+#: popup.php:35
+msgid "Error while reading from"
+msgstr "Hiba történt a beolvasás közben."
+
+#: popup.php:37
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr "Kérjük ellenőrizze  a PiwigoMedia beállításait és próbálja újra."
+
+#: popup.php:38
+msgid "Error reading image information, please try again."
+msgstr "Hiba a kép információk olvasásakor, kérjük próbálja újra."
+
+#: popup.php:154
+msgid "Choose a site"
+msgstr "Oldal kiválasztása"
+
+#: popup.php:156
+msgid "Piwigo site:"
+msgstr "Piwigo oldal:"
+
+#: popup.php:167
+#: popup.php:183
+msgid "Select"
+msgstr "Kiválaszt"
+
+#: popup.php:170
+msgid "Select a category"
+msgstr "Kategória kiválasztása"
+
+#: popup.php:175
+msgid "Category:"
+msgstr "Kategória:"
+
+#: popup.php:193
+msgid "Select the images"
+msgstr "Képek kiválasztása"
+
+#: popup.php:239
+msgid "Customize"
+msgstr "Testreszabás"
+
+#: popup.php:241
+msgid "Alignment:"
+msgstr "Igazítás:"
+
+#: popup.php:242
+msgid "None"
+msgstr "Nincs"
+
+#: popup.php:243
+msgid "Left"
+msgstr "Balra"
+
+#: popup.php:244
+msgid "Center"
+msgstr "Középre"
+
+#: popup.php:245
+msgid "Right"
+msgstr "Jobbra"
+
+#: popup.php:248
+msgid "Link to:"
+msgstr "Hivatkozás erre:"
+
+#: popup.php:249
+msgid "Image page"
+msgstr "Kép oldal"
+
+#: popup.php:250
+msgid "Fullsize image"
+msgstr "Teljes méretű kép"
+
+#: popup.php:253
+msgid "Link target:"
+msgstr "Hivatkozás megnyitása:"
+
+#: popup.php:254
+msgid "New window"
+msgstr "Új ablakban"
+
+#: popup.php:255
+msgid "Same window"
+msgstr "Jelenlegi ablakban"
+
+#: popup.php:261
+msgid "Insert into post"
+msgstr "Bejegyzésbe illesztés"
+
+#: popup.php:267
+msgid "author website"
+msgstr "szerző weboldala"
+
+#. Plugin Name of the plugin/theme
+msgid "PiwigoMedia"
+msgstr "PiwigoMedia"
+
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://joaoubaldo.com"
+msgstr "http://joaoubaldo.com"
+
+#. Description of the plugin/theme
+msgid "This plugins allows media from a Piwigo site to be inserted into WordPress posts."
+msgstr "Ez a bővítmény lehetővé teszi média beillesztését egy Piwigo galériából."
+
+#. Author of the plugin/theme
+msgid "João C."
+msgstr "João C."
+

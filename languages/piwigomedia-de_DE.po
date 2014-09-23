@@ -1,0 +1,164 @@
+# Copyright (C) 2011 PiwigoMedia
+# This file is distributed under the same license as the PiwigoMedia package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PiwigoMedia 0.9.6\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/piwigomedia\n"
+"POT-Creation-Date: 2011-02-21 22:38:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-02-23 12:27+GMT\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: piwigomedia_admin.php:23
+msgid "PiwigoMedia settings"
+msgstr "PiwigoMedia Einstellungen"
+
+#: piwigomedia_admin.php:27
+msgid "Primary settings"
+msgstr "Primäre Einstellungen"
+
+#: piwigomedia_admin.php:30
+msgid "Piwigo sites"
+msgstr "Piwigoseite"
+
+#: piwigomedia_admin.php:30
+msgid "Required field"
+msgstr "Erforderliche Felder"
+
+#: piwigomedia_admin.php:34
+msgid "Multiple Piwigo sites are allowed by inserting one URL per line."
+msgstr "Mehrere Piwigoseiten sind möglich indem man eine URL pro Linie hinzufügt."
+
+#: piwigomedia_admin.php:34
+msgid "You can select the default Piwigo site by placing its URL on top of the list."
+msgstr "Sie können die standardmäßige Piwigoseite auswählen indem Sie die URL zu Oberst in der Liste platziert."
+
+#: piwigomedia_admin.php:39
+msgid "Images per page"
+msgstr "Bilder pro Seite"
+
+#: piwigomedia_admin.php:42
+msgid "Number of images to display per page, in the selection screen."
+msgstr "Anzahl Bilder, welche pro Seite im Selektionsfenster angezeigt werden."
+
+#: piwigomedia_admin.php:47
+msgid "Save changes"
+msgstr "Änderungen speichern"
+
+#: popup.php:34
+msgid "PiwigoMedia must be configured."
+msgstr "PiwigoMedia muss konfiguriert werden."
+
+#: popup.php:35
+msgid "Error while reading from"
+msgstr "Fehler beim Lesen von"
+
+#: popup.php:37
+msgid "Please verify PiwigoMedia's configuration and try again."
+msgstr "Bitte verifizieren Sie die Konfiguration von PiwigoMedia und versuchen Sie es nochmals."
+
+#: popup.php:38
+msgid "Error reading image information, please try again."
+msgstr "Fehler beim Lesen der Bilderinformation. Bitte versuchen Sie es nochmals."
+
+#: popup.php:154
+msgid "Choose a site"
+msgstr "Wählen Sie eine Seite aus"
+
+#: popup.php:156
+msgid "Piwigo site:"
+msgstr "Piwigoseite:"
+
+#: popup.php:167 popup.php:183
+msgid "Select"
+msgstr "Auswählen"
+
+#: popup.php:170
+msgid "Select a category"
+msgstr "Eine Kategorie auswählen"
+
+#: popup.php:175
+msgid "Category:"
+msgstr "Kategorie"
+
+#: popup.php:193
+msgid "Select the images"
+msgstr "Das Bild auswählen"
+
+#: popup.php:239
+msgid "Customize"
+msgstr "Personalisieren"
+
+#: popup.php:241
+msgid "Alignment:"
+msgstr "Ausrichtung:"
+
+#: popup.php:242
+msgid "None"
+msgstr "Keine"
+
+#: popup.php:243
+msgid "Left"
+msgstr "Links"
+
+#: popup.php:244
+msgid "Center"
+msgstr "Mitte"
+
+#: popup.php:245
+msgid "Right"
+msgstr "Rechts"
+
+#: popup.php:248
+msgid "Link to:"
+msgstr "Link zu:"
+
+#: popup.php:249
+msgid "Image page"
+msgstr "Bilderseite"
+
+#: popup.php:250
+msgid "Fullsize image"
+msgstr "Bild in Originalgröße"
+
+#: popup.php:253
+msgid "Link target:"
+msgstr "Ziel des Linkes:"
+
+#: popup.php:254
+msgid "New window"
+msgstr "Neues Fenster"
+
+#: popup.php:255
+msgid "Same window"
+msgstr "Gleiches Fenster"
+
+#: popup.php:261
+msgid "Insert into post"
+msgstr "Im Post einfügen"
+
+#: popup.php:267
+msgid "author website"
+msgstr "Webseite des Autors"
+
+#. Plugin Name of the plugin/theme
+msgid "PiwigoMedia"
+msgstr "PiwigoMedia"
+
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 0.9.6)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://joaoubaldo.com"
+msgstr "http://joaoubaldo.com"
+
+#. Description of the plugin/theme
+msgid "This plugins allows media from a Piwigo site to be inserted into WordPress posts."
+msgstr "Dieses Plug-In ermöglicht es Medien von einer Piwigo Website in WordPress Beiträgen einzufügen."
+
+#. Author of the plugin/theme
+msgid "João C."
+msgstr "João C."

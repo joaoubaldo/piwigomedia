@@ -1,0 +1,37 @@
+.piwigomedia-single-image {
+}
+
+.piwigomedia-single-image img {
+    padding: 4px; 
+    border: 1px solid #a0a0a0;
+}
+
+ul.piwigomedia-category-preview {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+ul.piwigomedia-category-preview li {
+	display: inline;
+}
+
+#sidebar ul.piwigomedia-category-widget {
+	width: 100% ! important;
+	margin-top: 10px;
+}
+
+#sidebar ul.piwigomedia-category-widget li {
+        list-style: none ! important;
+	float: left !important;
+	padding: 0;
+	width: 50%;
+	border: 0px solid red;
+	text-align: center;
+}
+
+ul.piwigomedia-category-widget .piwigomedia-single-image img {
+    padding: 2px;
+    border: 1px solid #a0a0a0;
+    max-height: 80px;
+}

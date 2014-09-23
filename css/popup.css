@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background-color: #F0F0EE;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 8px;
+    color: #505050;
+}
+
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+input {
+	background: #FFFFFF;
+	border: 1px solid #cccccc;
+}
+
+td, input, select, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+input, select, textarea {
+	border: 1px solid #808080;
+    border-bottom: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+input.radio {
+	border: 1px none #000000;
+	background-color: transparent;
+	vertical-align: middle;
+}
+
+input.checkbox {
+	border: 1px none #000000;
+	background-color: transparent;
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 1px solid #919B9C;
+	font-family: Verdana, Arial;
+	padding: 4px;
+	margin: 10px 0;
+	padding: 4px;
+	clear: left
+}
+
+fieldset input {
+    margin: 0 10px 0 0;
+}
+
+legend {
+	color: #2B6FB6;
+	font-weight: bold;
+}
+
+a:link, a:visited {
+	color: #2B6FB6;
+
+}
+
+a:hover {
+	color: #ee0000;
+}
+
+h1, h2, h3, h4 {
+	color: #2B6FB6;
+	margin: 10px 10px 10px 0;
+	padding: 0px;
+	padding-top: 5px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h1 {
+    color: #2B6FB6;
+    text-align: right;
+}
+
+    h1 span.media-text {
+        color: orange;
+    }
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+input.submit {
+    padding: 2px 8px;
+    margin: auto 5px; 
+    color: #2B6FB6;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+p.instruction {
+    text-align: left;
+    font-weight: bold;
+    font-size: 120%;
+    color: #2B6FB6;
+    margin: 8px 0 8px 0; 
+    border-bottom: 1px dotted #2B6FB6;
+}
+
+.section {
+    padding: 8px 5px;
+    background: #eaeaea;
+    border: 1px solid #2B6FB6;
+    border-top: 3px solid #2B6FB6;
+    margin-bottom: 10px;
+}
+
+div.footer {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+}
+
+
+.messages-section {
+    display: none;
+}
+
+    .messages-section li.info {
+        color: green;
+    }
+
+    .messages-section li.error {
+        color: red;
+    }
+
+.current-category {
+    text-align: right;
+    margin: 12px 0;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+    .current-category p.arrow {
+        display: none;
+    }
+
+    .current-category ol {
+        display: inline;
+    }
+
+        .current-category ol li {
+            display: inline;
+            border-right: 1px solid #a0a0a0;
+            padding: 2px 5px;
+        }
+
+            .current-category ol li.current {
+                border: 0;
+            }
+
+
+
+
+.page-selection {
+    text-align: center;
+    margin: 4px 0;
+    font-size: 120%;
+    font-style: italic;
+}
+
+    .page-selection ol {
+        display: inline;
+    }
+
+        .page-selection ol li {
+            display: inline;
+            border-right: 1px solid #a0a0a0;
+            padding: 2px 5px;
+            cursor: pointer;
+            color: #2B6FB6;
+        }
+
+            .page-selection ol li.last {
+                border: 0;
+            }
+
+            .page-selection ol li.selected {
+                color: orange;
+            }
+        
+
+
+ul.image-selector {
+}
+
+    ul.image-selector li.selected img {
+        background: orange;
+    }
+
+    ul.image-selector li {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    ul.image-selector li img {
+        cursor: pointer;
+        padding: 4px;
+        border: 1px solid #2B6FB6;
+        max-width: 140px;
+        max-height: 140px;
+    }
+
+
+.style-section fieldset {
+    margin: 15px;
+    padding: 10px;
+}
+
+
+.confirmation-section {
+    border-top: 3px solid #2B6FB6;
+    border-bottom: 3px solid #2B6FB6;
+    margin: 0 0 20px 0;
+}
+
+    .confirm-button {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+div.images-section, div.style-section, div.confirmation-section {
+    display: none;
+}
+
+#loading {
+    display: none;
+    background: #fff;
+    color: #2B6FB6;
+    position: absolute;
+    z-index: 999;
+    width: 100px
+    height: 2em;
+    top: 0;
+    left: 0;
+}
+
