@@ -46,4 +46,27 @@ function pwm_curl_get($url, array $get = NULL, array $options = array())
     return $result;
 }
 
+
+function get_sites() {
+    $sites = array();
+    foreach (explode("\n", get_option('piwigomedia_piwigo_urls', '')) as $u) {
+        $tu = trim($u);
+        if (!empty($tu))
+            $sites[] = $tu;
+    }
+
+    return $sites;
+}
+
+function get_tr_map() {
+    $tr_map = array(
+        'Error while reading from' => __('Error while reading from', 'piwigomedia'),
+        'Please verify PiwigoMedia\'s configuration and try again.' => __('Please verify PiwigoMedia\'s configuration and try again.', 'piwigomedia'),
+        'Error reading image information, please try again.' => __('Error reading image information, please try again.', 'piwigomedia'),
+        'Loading...' => __('Loading...', 'piwigomedia')
+    );
+    
+    return $tr_map;
+}
+
 ?>
