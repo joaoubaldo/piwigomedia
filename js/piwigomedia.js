@@ -62,6 +62,11 @@ app.controller(
 	                this[key] = value;
 	            }, $scope);
 	            $scope.loading = false;
+	            console.log($scope.sites);
+	            if ($scope.sites.length < 1)
+	                $scope.addMessage(
+	                    $scope.trMap['PiwigoMedia must be configured.'],
+	                    'error');
 	        });
 	    };
     

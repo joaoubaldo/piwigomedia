@@ -1,19 +1,8 @@
 <?php
     require_once('../../../wp-load.php');
 
-    // Verify post id
-    $error = null;
-
-    // Check permissions
     if (get_current_user_id() == 0)
-        die('no access');
-
-    if (count($sites) < 1)
-        $error = 'not_configured';
-
-    $error_msg = array(
-        'not_configured' => __('PiwigoMedia must be configured.', 'piwigomedia')
-    );
+        die(__('No access', 'piwigomedia'));
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -34,7 +23,7 @@
     <body ng-controller="PiwigoController">
         <h1 class="text-center"><span class="piwigo-text">Piwigo</span><span class="media-text">Media</span> <small>for WP</small></h1>
         
-        <div class="form-group">
+        <div class="form-group" ng-show="sites.length > 0">
             <label class="col-sm-1">{{trMap["Site"]}}</label>
             <div class="col-sm-11">
                 <select class="form-control" ng-model="site" ng-options="s for s in sites">
@@ -62,6 +51,11 @@
         </div>
 
         <div class="operations-panel">
+            <div class="btn-group">
+              <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="(k, v) in imageTypeList" ng-class="{active: k==imageType}"><a href="#" ng-click="setImageType(k)">{{v}}</a></li>
+              </ul>
+            </div>
             <div class="btn-group" ng-if="basketOrder.length > 0">
                 <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">

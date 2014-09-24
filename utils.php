@@ -76,7 +76,8 @@ function get_tr_map() {
         'Page' => __('Page', 'piwigomedia'),
         'Fullsize' => __('Fullsize', 'piwigomedia'),
         'Thumbnail' => __('Thumbnail', 'piwigomedia'),
-        'No access' => __('No access', 'piwigomedia')
+        'No access' => __('No access', 'piwigomedia'),
+        'PiwigoMedia must be configured.' => __('PiwigoMedia must be configured.', 'piwigomedia')
     );
    
     

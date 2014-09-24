@@ -4,7 +4,8 @@ require_once('../../../wp-load.php');
 require_once('utils.php');
 
 if (get_current_user_id() == 0)
-    die('no access');
+    die(__('No access', 'piwigomedia'));
+    
 
 /*
 View: initial request to fetch essential data, including sites list, string 
