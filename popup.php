@@ -35,7 +35,7 @@
         <h1 class="text-center"><span class="piwigo-text">Piwigo</span><span class="media-text">Media</span> <small>for WP</small></h1>
         
         <div class="form-group">
-            <label class="col-sm-1">Site</label>
+            <label class="col-sm-1">{{trMap["Site"]}}</label>
             <div class="col-sm-11">
                 <select class="form-control" ng-model="site" ng-options="s for s in sites">
                 </select>
@@ -43,7 +43,7 @@
         </div>
         
         <div class="form-group"  ng-show="categoryCount() > 0 && !loading">
-            <label class="col-sm-1">Category</label>
+            <label class="col-sm-1">{{trMap["Category"]}}</label>
             <div class="col-sm-11">
                 <select ng-model="category" ng-options="c.id as getFullPath(c.id) for (k, c) in categories" class="form-control">
                 </select>
@@ -63,10 +63,9 @@
 
         <div class="operations-panel">
             <div class="btn-group" ng-if="basketOrder.length > 0">
-                <!--<button type="button" class="btn btn-default" ng-if="basketOrder.length > 0">Review</button>-->
                 <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Image type <span class="caret"></span>
+                    {{trMap["Image type"]}} <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
                     <li ng-repeat="(k, v) in imageTypeList" ng-class="{active: k==imageType}"><a href="#" ng-click="setImageType(k)">{{v}}</a></li>
@@ -75,14 +74,14 @@
                 
                 <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Link to <span class="caret"></span>
+                    {{trMap["Link to"]}} <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
                       <li ng-repeat="(k, v) in linkToList" ng-class="{active: k==linkTo}"><a href="#" ng-click="setLinkTo(k)">{{v}}</a></li>
                   </ul>
                 </div>
                 
-                <button type="button" class="btn btn-primary" ng-click="insertPost()"><span class="badge">{{basketOrder.length}}</span> Insert</button>
+                <button type="button" class="btn btn-primary" ng-click="insertPost()"><span class="badge">{{basketOrder.length}}</span> {{trMap["Insert"]}}</button>
            </div>
         </div>
         

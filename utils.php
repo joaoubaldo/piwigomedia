@@ -65,8 +65,20 @@ function get_tr_map() {
         'Error while reading from' => __('Error while reading from', 'piwigomedia'),
         'Please verify PiwigoMedia\'s configuration and try again.' => __('Please verify PiwigoMedia\'s configuration and try again.', 'piwigomedia'),
         'Error reading image information, please try again.' => __('Error reading image information, please try again.', 'piwigomedia'),
-        'Loading...' => __('Loading...', 'piwigomedia')
+        'Loading...' => __('Loading...', 'piwigomedia'),
+        'Image type' => __('Image type', 'piwigomedia'),
+        'Link to' => __('Link to', 'piwigomedia'),
+        'Insert' => __('Insert', 'piwigomedia'),
+        'Post' => __('Post', 'piwigomedia'),
+        'Category' => __('Category', 'piwigomedia'),
+        'Site' => __('Site', 'piwigomedia'),
+        'Nothing' => __('Nothing', 'piwigomedia'),
+        'Page' => __('Page', 'piwigomedia'),
+        'Fullsize' => __('Fullsize', 'piwigomedia'),
+        'Thumbnail' => __('Thumbnail', 'piwigomedia'),
+        'No access' => __('No access', 'piwigomedia')
     );
+   
     
     return $tr_map;
 }

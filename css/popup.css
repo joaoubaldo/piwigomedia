@@ -35,3 +35,7 @@
 .grid-container {
     margin: 0 50px;
 }
+
+.loader {
+    padding: 15px;
+}
