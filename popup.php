@@ -52,7 +52,7 @@
 
         <div class="clearfix"></div>
         
-        <div class="loader" ng-if="loading"><img src="loader.gif"></div>
+        <div class="loader text-center" ng-if="loading"><img src="loader.gif"></div>
         
         <div class="panel">
             <p>{{m.message}}</p>

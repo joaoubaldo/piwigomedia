@@ -1,6 +1,5 @@
 var app = angular.module("PiwigoMediaApp", []);
 
-
 app.filter('splitEvery', function() {
     var cache = {};
     var filter = function(arr, size) {
@@ -58,7 +57,7 @@ app.controller(
     
 	    $scope.setup = function() {
             $scope.loading = true;
-	        $http.get('app.php?a=setup').success(function(data) {
+	        $http.get('app.php?__a__=setup').success(function(data) {
 	            angular.forEach(data.result, function(value, key) {
 	                this[key] = value;
 	            }, $scope);
@@ -174,7 +173,9 @@ app.controller(
             $scope.loading = true;
             
             config = {
-                "params": {"__url__": $scope.site, 
+                "params": {
+                    "__url__": $scope.site, 
+                    "__a__": "forward", 
                     "format": "json", 
                     "method": "pwg.categories.getList", 
                     "recursive": true}
@@ -183,8 +184,9 @@ app.controller(
             $scope.categories = {};
             $scope.category = -1;
             
-            $http.get('query_remote_pwg.php', config).success(
+            $http.get('app.php', config).success(
                 function(data) {
+                    console.log(data);
                     if ((data == undefined) || data["stat"] != "ok") {
                         var msg = $scope.trMap["Error while reading from"] + " " + $scope.site + ". " +
                             $scope.trMap["Please verify PiwigoMedia\'s configuration and try again."];
@@ -211,7 +213,8 @@ app.controller(
             $scope.loading = true;
             
     	    var config = {
-                "params": {"__url__": $scope.site, 
+                "params": {"__url__": $scope.site,
+                    "__a__": "forward",  
                     "format": "json", 
                     "method": "pwg.categories.getImages", 
                     "cat_id": $scope.category, 
@@ -222,7 +225,7 @@ app.controller(
             $scope.images = {};
             $scope.imagesOrder = [];
                 
-            $http.get('query_remote_pwg.php', config).success(
+            $http.get('app.php', config).success(
                 function(data) {
                     if ((data == undefined) || data["stat"] != "ok") {
                         var msg = $scope.trMap["Error reading image information, please try again."];
