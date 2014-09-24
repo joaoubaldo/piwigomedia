@@ -51,6 +51,29 @@
         </div>
 
         <div class="operations-panel">
+            <div class="btn-group" ng-if="pages.length > 0">
+                <!-- page selector -->
+                <div class="btn-group pointer">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    {{page+1}} <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li ng-repeat="pa in pages" ng-click="setPage(pa)" ng-class="{active: $index == page}"><a>{{pa+1}}</a>
+                  </ul>
+                </div>
+                
+                <!-- per page selector -->
+                <div class="btn-group pointer">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    x {{perPage}} <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                      <li ng-repeat="count in [10,30,50,200,500]" ng-click="setPerPage(count)" ng-class="{active: perPage == count}"><a>{{count}}</a></li>
+                  </ul>
+                </div>
+            </div>
+                        
+        
             <div class="btn-group">
               <ul class="dropdown-menu" role="menu">
                 <li ng-repeat="(k, v) in imageTypeList" ng-class="{active: k==imageType}"><a href="#" ng-click="setImageType(k)">{{v}}</a></li>

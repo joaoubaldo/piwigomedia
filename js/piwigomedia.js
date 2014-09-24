@@ -29,6 +29,7 @@ app.controller(
         $scope.sites = [];
         $scope.site = '';
         $scope.page = 0;
+        $scope.pages = [];
         $scope.postId = -1;
         $scope.basket = {};
         $scope.basketOrder = [];
@@ -62,7 +63,6 @@ app.controller(
 	                this[key] = value;
 	            }, $scope);
 	            $scope.loading = false;
-	            console.log($scope.sites);
 	            if ($scope.sites.length < 1)
 	                $scope.addMessage(
 	                    $scope.trMap['PiwigoMedia must be configured.'],
@@ -71,6 +71,53 @@ app.controller(
 	    };
     
 	    $scope.setup();
+	    
+	    $scope.refreshCategory = function() {
+            if ($scope.category == -1)
+                return;
+
+            $scope.loading = true;
+            
+    	    var config = {
+                "params": {"__url__": $scope.site,
+                    "__a__": "forward",  
+                    "format": "json", 
+                    "method": "pwg.categories.getImages", 
+                    "cat_id": $scope.category, 
+                    "page": $scope.page, 
+                    "per_page": $scope.perPage}
+            };
+
+            $scope.images = {};
+            $scope.imagesOrder = [];
+                
+            $http.get('app.php', config).success(
+                function(data) {
+                    if ((data == undefined) || data["stat"] != "ok") {
+                        var msg = $scope.trMap["Error reading image information, please try again."];
+                        $scope.addMessage(msg, 'error');
+                        $scope.loading = false;
+                        return;
+                    }
+                    angular.forEach(data.result.images, 
+                        function(value, key) {
+                            $scope.images[value.id] = value;
+                            $scope.imagesOrder.push(value.id);
+                        }, 
+                        $scope);
+                        
+                    var r = Math.ceil(
+                        $scope.categories[$scope.category].nb_images / $scope.perPage);
+                       
+                    $scope.pages = [];
+                    for (i=0; i<r;i++) {
+                        $scope.pages.push(i);
+                    }
+                        
+                    $scope.loading = false;
+                }
+            );
+	    };
 	    
         $scope.addMessage = function(message, type) {
             $scope.messages.push({'message': message, 'type': type})
@@ -154,6 +201,7 @@ app.controller(
             return Object.keys($scope.categories).length;
         };
         
+       
         $scope.getFullPath = function(category_id) {
             if (!category_id) return;
             
@@ -169,6 +217,14 @@ app.controller(
 
         $scope.imageClick = function(image_id) {
             $scope.toFromBasket(image_id);
+        };
+        
+        $scope.setPage = function(page) {
+            $scope.page = page;
+        };
+        
+        $scope.setPerPage = function(value) {
+            $scope.perPage = value;
         };
 
 	    $scope.$watch("site", function(new_value, old_value) {
@@ -191,7 +247,6 @@ app.controller(
             
             $http.get('app.php', config).success(
                 function(data) {
-                    console.log(data);
                     if ((data == undefined) || data["stat"] != "ok") {
                         var msg = $scope.trMap["Error while reading from"] + " " + $scope.site + ". " +
                             $scope.trMap["Please verify PiwigoMedia\'s configuration and try again."];
@@ -212,42 +267,15 @@ app.controller(
 	    });
 
 	    $scope.$watch("category", function(new_value, old_value) {
-            if ($scope.category == -1)
-                return;
-
-            $scope.loading = true;
-            
-    	    var config = {
-                "params": {"__url__": $scope.site,
-                    "__a__": "forward",  
-                    "format": "json", 
-                    "method": "pwg.categories.getImages", 
-                    "cat_id": $scope.category, 
-                    "page": $scope.page, 
-                    "per_page": $scope.perPage}
-            };
-
-            $scope.images = {};
-            $scope.imagesOrder = [];
-                
-            $http.get('app.php', config).success(
-                function(data) {
-                    if ((data == undefined) || data["stat"] != "ok") {
-                        var msg = $scope.trMap["Error reading image information, please try again."];
-                        $scope.addMessage(msg, 'error');
-                        $scope.loading = false;
-                        return;
-                    }
-                    angular.forEach(data.result.images, 
-                        function(value, key) {
-                            $scope.images[value.id] = value;
-                            $scope.imagesOrder.push(value.id);
-                        }, 
-                        $scope);
-                        
-                    $scope.loading = false;
-                }
-            );
+            $scope.refreshCategory();
+	    });
+	    
+	    $scope.$watch("perPage", function(new_value, old_value) {
+            $scope.refreshCategory();
+	    });
+	    
+	    $scope.$watch("page", function(new_value, old_value) {
+            $scope.refreshCategory();
 	    });
         
 
