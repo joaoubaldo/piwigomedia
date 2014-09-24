@@ -9,3 +9,30 @@
 .media-text {
     color: orange;
 }
+
+.pointer {
+    cursor: pointer;
+}
+
+.operations-panel {
+    padding: 10px;
+    text-align: center;
+}
+
+.footer {
+    padding: 15px;
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+
+.grid-container {
+    margin: 0 50px;
+}
