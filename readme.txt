@@ -4,7 +4,7 @@ Donate link: http://joaoubaldo.com
 Tags: gallery, piwigo, integration, media
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.1.4
+Stable tag: 1.9.0
 
 This plugins allows media from a Piwigo site to be inserted into WordPress posts and pages.
 

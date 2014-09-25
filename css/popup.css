@@ -1,5 +1,6 @@
 .selected { 
     border-color: orange;
+    opacity: 0.5;
 }
 
 .piwigo-text {
