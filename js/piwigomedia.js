@@ -238,12 +238,15 @@ app.controller(
                             '<img src="'+thumbUrl+'" class="'+align+'" />'+
                         '</a>';
                 }
-                    
+
                 window.parent.tinyMCE.execCommand('mceInsertContent',
                     false, html);
-                    
+
             }, null);
-            
+
+            $scope.addMessage(
+                $scope.trMap['Total images inserted:'] + " " + $scope.basketOrder.length,
+                'success');            
             $scope.emptyBasket();
         };
         

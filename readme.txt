@@ -3,14 +3,14 @@ Contributors: johnnyfive
 Donate link: http://joaoubaldo.com
 Tags: gallery, piwigo, integration, media
 Requires at least: 3.0.1
-Tested up to: 3.4.2
+Tested up to: 4.0
 Stable tag: 1.1.4
 
-This plugins allows media from a Piwigo site to be inserted into WordPress posts.
+This plugins allows media from a Piwigo site to be inserted into WordPress posts and pages.
 
 == Description ==
 
-PiwigoMedia is a WordPress plugin that allows easy insertion and linking of images hosted in a Piwigo site, into WordPress posts, using the TinyMCE editor.
+PiwigoMedia WordPress plugin features integration between Piwigo sites and Wordpress, using the TinyMCE editor.
 
 The main advantages of PiwigoMedia are:
 
@@ -24,9 +24,7 @@ The main advantages of PiwigoMedia are:
 1. Unpack PiwigoMedia's zip file inside `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure PiwigoMedia. Go to 'Settings/PiwigoMedia' page in WordPress administration.
-4. Set the parameter "Piwigo URL" to point to your Piwigo site.
-5. Save changes.
-
+4. Access PiwigoMedia functionality using Wordpress' wysiwyg editor
 
 == Frequently Asked Questions ==
 
@@ -41,29 +39,24 @@ pwg-category - display any number of images from a category:
 pwg-gallery - display Piwigo categories as inline galleries:
 [pwg-gallery site="http://..." id="CATEGORY_ID" images="NUMBER_OF_IMAGES_TO_DISPLAY" page="PAGE_INDEX" height="GALLERY_HEIGHT"]
 
-= How do I add images to a post? =
-
-1. Go to WordPress Post editor.
-2. Press the PiwigoMedia's button, available in Visual editing mode.
-3. Navigate to the desired Category.
-4. Make your image selection.
-5. Insert image selection into the post.
-
-or use shortcodes.
 
 = Which versions of Piwigo are supported? =
 
-The latest tested Piwigo version is 2.6.1.
+Since PiwigoMedia v1.9.0 only Piwigo v2.0 and upper were tested.
 
-= Which browsers are supported? =
-
-Only Firefox and Chrome were tested but there should be compatibility for browsers that support jQuery.
 
 == Screenshots ==
 
 1. PiwigoMedia's main window
 
 == Changelog ==
+= 1.9.0 =
+* new: Major rewrite. PiwigoMedia now uses AngularJS and Bootstrap.
+* update: UI completely changed. Cleaner and more responsive interface.
+* updated: pot file was updated with new strings.
+* updated: it is now possible to make a selection from multiple Piwigo sites.
+* updated: shortcodes but pwm_gallery are working again.
+
 = 1.1.4 =
 * update: fixed a nasty bug in pagination/navigation.
 

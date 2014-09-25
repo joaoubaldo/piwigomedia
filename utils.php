@@ -77,7 +77,8 @@ function get_tr_map() {
         'Fullsize' => __('Fullsize', 'piwigomedia'),
         'Thumbnail' => __('Thumbnail', 'piwigomedia'),
         'No access' => __('No access', 'piwigomedia'),
-        'PiwigoMedia must be configured.' => __('PiwigoMedia must be configured.', 'piwigomedia')
+        'PiwigoMedia must be configured.' => __('PiwigoMedia must be configured.', 'piwigomedia'),
+        'Total images inserted:' => __('Total images inserted:', 'piwigomedia')
     );
    
     

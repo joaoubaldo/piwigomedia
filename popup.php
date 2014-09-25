@@ -24,7 +24,7 @@
         <h1 class="text-center"><span class="piwigo-text">Piwigo</span><span class="media-text">Media</span> <small>for WP</small></h1>
         
         <div class="form-group" ng-show="sites.length > 0">
-            <label class="col-sm-1">{{trMap["Site"]}}</label>
+            <label class="col-sm-1"><span class="glyphicon glyphicon-camera"></span> {{trMap["Site"]}}</label>
             <div class="col-sm-11">
                 <select class="form-control" ng-model="site" ng-options="s for s in sites" ng-change="changeSite()">
                 </select>
@@ -32,7 +32,7 @@
         </div>
         
         <div class="form-group"  ng-show="categoryCount() > 0 && !loading">
-            <label class="col-sm-1">{{trMap["Category"]}}</label>
+            <label class="col-sm-1"><span class="glyphicon glyphicon-book"></span> {{trMap["Category"]}}</label>
             <div class="col-sm-11">
                 <select ng-model="category" class="form-control" ng-change="changeCategory()">
                     <option value="{{c.id}}" ng-repeat="(k, c) in categories" ng-if="c.nb_images > 0">{{getFullPath(c.id)}}</option>
@@ -46,8 +46,9 @@
         
         <div class="panel">
             <p>{{m.message}}</p>
-            <div class="alert pointer" role="alert" ng-repeat="m in messages" ng-class="{'alert-danger': m.type=='error'}" ng-click="removeMessage($index)">
-                <span class="glyphicon glyphicon-remove text-right"></span> {{m.message}}
+            <div class="alert pointer" role="alert" ng-repeat="m in messages" ng-class="{'alert-danger': m.type=='error', 'alert-success': m.type=='success'}" ng-click="removeMessage($index)">
+                <span class="glyphicon text-right" ng-class="{'glyphicon-remove': m.type=='error', 'glyphicon glyphicon-ok': m.type=='success'}"></span> {{m.message}}
+                
             </div>
         </div>
 
