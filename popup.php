@@ -26,7 +26,7 @@
         <div class="form-group" ng-show="sites.length > 0">
             <label class="col-sm-1">{{trMap["Site"]}}</label>
             <div class="col-sm-11">
-                <select class="form-control" ng-model="site" ng-options="s for s in sites">
+                <select class="form-control" ng-model="site" ng-options="s for s in sites" ng-change="changeSite()">
                 </select>
             </div>
         </div>
@@ -34,7 +34,8 @@
         <div class="form-group"  ng-show="categoryCount() > 0 && !loading">
             <label class="col-sm-1">{{trMap["Category"]}}</label>
             <div class="col-sm-11">
-                <select ng-model="category" ng-options="c.id as getFullPath(c.id) for (k, c) in categories" class="form-control">
+                <select ng-model="category" class="form-control" ng-change="changeCategory()">
+                    <option value="{{c.id}}" ng-repeat="(k, c) in categories" ng-if="c.nb_images > 0">{{getFullPath(c.id)}}</option>
                 </select>
             </div>
         </div>
