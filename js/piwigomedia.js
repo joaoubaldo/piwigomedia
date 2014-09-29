@@ -55,7 +55,8 @@ app.controller(
         $scope.messages = [];
 	    $scope.trMap = {};
 	    $scope.category = -1;
-	    $scope.categories = [];
+	    $scope.categories = {};
+	    $scope.categoriesOrder = []
 	    $scope.images = {};
         $scope.imagesOrder = [];
         $scope.linkTo = 'page';
@@ -90,6 +91,7 @@ app.controller(
 	    $scope.resetCategories = function() {
             $scope.categories = {};
             $scope.category = -1;
+            $scope.categoriesOrder = []
 	    };
 	    
 	    $scope.resetImages = function() {
@@ -129,13 +131,28 @@ app.controller(
                         $scope.loading = false;
                         return;
                     }
-                    
+                    var tmp = [];
                     angular.forEach(data.result.categories, 
                         function(value, key) {
                             $scope.categories[value.id] = value;
+                            tmp.push([$scope.getFullPath(value.id), value.id]);
                         }, 
                         $scope);
-                        
+
+                    /* Sort by full category path */
+                    tmp.sort(function(current, next){
+                        return current[0] > next[0] ? 1: -1;
+                    });
+                    
+                    /* Copy array */
+                    angular.forEach(tmp, 
+                        function(value, key) {
+                            $scope.categoriesOrder.push(value[1]);
+                        },
+                        null);
+
+                    tmp = [];
+                       
                     $scope.loading = false;
                 }
             );

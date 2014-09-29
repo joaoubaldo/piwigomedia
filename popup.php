@@ -54,7 +54,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
             <label class="col-sm-1"><span class="glyphicon glyphicon-book"></span> {{trMap["Category"]}}</label>
             <div class="col-sm-11">
                 <select ng-model="category" class="form-control" ng-change="changeCategory()">
-                    <option value="{{c.id}}" ng-repeat="(k, c) in categories" ng-if="c.nb_images > 0">{{getFullPath(c.id)}}</option>
+                    <option value="{{k}}" ng-repeat="k in categoriesOrder" ng-if="categories[k].nb_images > 0">{{getFullPath(k)}}</option>
                 </select>
             </div>
         </div>
