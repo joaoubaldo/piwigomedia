@@ -50,7 +50,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
             </div>
         </div>
         
-        <div class="form-group"  ng-show="categoryCount() > 0 && !loading">
+        <div class="form-group"  ng-show="categoriesOrder.length > 0 && !loading">
             <label class="col-sm-1"><span class="glyphicon glyphicon-book"></span> {{trMap["Category"]}}</label>
             <div class="col-sm-11">
                 <select ng-model="category" class="form-control" ng-change="changeCategory()">
@@ -106,7 +106,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
                     {{trMap["Image type"]}} <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    <li ng-repeat="(k, v) in imageTypeList" ng-class="{active: k==imageType}"><a href="#" ng-click="setImageType(k)">{{v}}</a></li>
+                    <li ng-repeat="(k, v) in imageTypeList" ng-class="{active: k==imageType}"><a href="#" ng-click="setImageType(k)">{{trMap[v]}}</a></li>
                   </ul>
                 </div>
                 
@@ -115,7 +115,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
                     {{trMap["Link to"]}} <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                      <li ng-repeat="(k, v) in linkToList" ng-class="{active: k==linkTo}"><a href="#" ng-click="setLinkTo(k)">{{v}}</a></li>
+                      <li ng-repeat="(k, v) in linkToList" ng-class="{active: k==linkTo}"><a href="#" ng-click="setLinkTo(k)">{{trMap[v]}}</a></li>
                   </ul>
                 </div>
                 

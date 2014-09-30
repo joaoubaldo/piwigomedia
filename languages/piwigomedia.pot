@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PiwigoMedia 1.9.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/piwigomedia\n"
-"POT-Creation-Date: 2014-09-25 14:11:13+00:00\n"
+"POT-Creation-Date: 2014-09-30 10:15:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: app.php:7 popup.php:5 utils.php:79
+#: app.php:25 popup.php:24 utils.php:98
 msgid "No access"
 msgstr ""
 
@@ -53,67 +53,71 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
-#: utils.php:65
+#: utils.php:83
 msgid "Error while reading from"
 msgstr ""
 
-#: utils.php:66
+#: utils.php:84
 msgid "Please verify PiwigoMedia's configuration and try again."
 msgstr ""
 
-#: utils.php:67
+#: utils.php:85
 msgid "Error reading image information, please try again."
 msgstr ""
 
-#: utils.php:68
+#: utils.php:86
 msgid "Loading..."
 msgstr ""
 
-#: utils.php:69
+#: utils.php:87
 msgid "Image type"
 msgstr ""
 
-#: utils.php:70
+#: utils.php:88
 msgid "Link to"
 msgstr ""
 
-#: utils.php:71
+#: utils.php:89
 msgid "Insert"
 msgstr ""
 
-#: utils.php:72
+#: utils.php:90
 msgid "Post"
 msgstr ""
 
-#: utils.php:73
+#: utils.php:91
 msgid "Category"
 msgstr ""
 
-#: utils.php:74
+#: utils.php:92
 msgid "Site"
 msgstr ""
 
-#: utils.php:75
+#: utils.php:93
 msgid "Nothing"
 msgstr ""
 
-#: utils.php:76
+#: utils.php:94
 msgid "Page"
 msgstr ""
 
-#: utils.php:77
+#: utils.php:95
+msgid "Image code"
+msgstr ""
+
+#: utils.php:96
 msgid "Fullsize"
 msgstr ""
 
-#: utils.php:78
+#: utils.php:97
 msgid "Thumbnail"
 msgstr ""
 
-#: utils.php:80
+#: utils.php:99
 msgid "PiwigoMedia must be configured."
 msgstr ""
 
-#: utils.php:81
+#: utils.php:100
 msgid "Total images inserted:"
 msgstr ""
 
@@ -121,10 +125,7 @@ msgstr ""
 msgid "PiwigoMedia"
 msgstr ""
 
-#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 1.9.0)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  piwigomedia.pot (PiwigoMedia 1.9.0)  #-#-#-#-#
-#. Author URI of the plugin/theme
 msgid "http://joaoubaldo.com"
 msgstr ""
 
@@ -135,5 +136,9 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "João C."
+msgid "Joao Coutinho"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://b.joaoubaldo.com"
 msgstr ""

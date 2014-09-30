@@ -71,7 +71,8 @@ app.controller(
         
         $scope.imageTypeList = {
             'thumb': 'Thumbnail',
-            'fullsize': 'Fullsize'            
+            'fullsize': 'Fullsize',
+            'scode_image': 'Image code'
         };
         
         $scope.setup = function() {
@@ -114,6 +115,7 @@ app.controller(
             $scope.loading = true;
             
             config = {
+                "timeout": 10000,
                 "params": {
                     "__url__": $scope.site, 
                     "__a__": "forward", 
@@ -172,6 +174,7 @@ app.controller(
             $scope.loading = true;
             
     	    var config = {
+        	    "timeout": 10000,
                 "params": {"__url__": $scope.site,
                     "__a__": "forward",  
                     "format": "json", 
@@ -250,6 +253,13 @@ app.controller(
                 var img = $scope.basket[value];
                 var url;
                 var thumbUrl;
+                
+                if ($scope.imageType == 'scode_image') {
+                    var code = "[pwg-image site=\""+$scope.site+"\" id=\""+value+"\"]";
+                    window.parent.tinyMCE.execCommand('mceInsertContent',
+                        false, code);
+                    return true;
+                }
                 
                 if ($scope.imageType == 'thumb')
                     thumbUrl = img.derivatives.thumb.url;

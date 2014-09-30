@@ -27,7 +27,7 @@ function pwm_curl_post($url, array $post = NULL, array $options = array())
         CURLOPT_FRESH_CONNECT => 1,
         CURLOPT_RETURNTRANSFER => 1,
         CURLOPT_FORBID_REUSE => 1,
-        CURLOPT_TIMEOUT => 4,
+        CURLOPT_TIMEOUT => 10,
         CURLOPT_POSTFIELDS => http_build_query($post),
         CURLOPT_SSL_VERIFYPEER => false,
         CURLOPT_SSL_VERIFYHOST => false
@@ -50,7 +50,7 @@ function pwm_curl_get($url, array $get = NULL, array $options = array())
             http_build_query($get, '', '&'),
         CURLOPT_HEADER => 0,
         CURLOPT_RETURNTRANSFER => TRUE,
-        CURLOPT_TIMEOUT => 4,
+        CURLOPT_TIMEOUT => 10,
         CURLOPT_SSL_VERIFYPEER => false,
         CURLOPT_SSL_VERIFYHOST => false
     );
@@ -92,6 +92,7 @@ function get_tr_map() {
         'Site' => __('Site', 'piwigomedia'),
         'Nothing' => __('Nothing', 'piwigomedia'),
         'Page' => __('Page', 'piwigomedia'),
+        'Image code' => __('Image code', 'piwigomedia'),        
         'Fullsize' => __('Fullsize', 'piwigomedia'),
         'Thumbnail' => __('Thumbnail', 'piwigomedia'),
         'No access' => __('No access', 'piwigomedia'),
