@@ -50,6 +50,17 @@ Since PiwigoMedia v1.9.0 only Piwigo v2.0 and upper were tested.
 1. PiwigoMedia's main window
 
 == Changelog ==
+= 1.9.1 =
+* updated: category list is now sorted
+* updated: pot file
+* updated: GET timeout increased from 4 to 10 seconds
+* updated: new images for footer links
+* updated: images are now stored in their own directory img/
+* updated: angularjs and jquery js files are now available in js/ instead of google api hosting
+* fixed: image type and link to translations were not being used
+* new: prepare script to prepare version updates
+* new: it is now possible to insert pwg_image shortcode using UI
+
 = 1.9.0 =
 * new: Major rewrite. PiwigoMedia now uses AngularJS and Bootstrap.
 * update: UI completely changed. Cleaner and more responsive interface.
