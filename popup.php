@@ -32,7 +32,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         <title>PiwigoMedia</title>
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <script type='text/javascript' src='<?php echo get_bloginfo('wpurl');?>/wp-includes/js/tinymce/tiny_mce_popup.js'></script>
-        <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js'></script>
+        <script type='text/javascript' src='js/angular.min.js'></script>
         <script type='text/javascript' src='js/piwigomedia.js'></script>
 
         <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' />
@@ -61,7 +61,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
         <div class="clearfix"></div>
         
-        <div class="loader text-center" ng-if="loading"><img src="loader.gif"></div>
+        <div class="loader text-center" ng-if="loading"><img src="img/loader.gif"></div>
         
         <div class="panel">
             <p>{{m.message}}</p>
@@ -134,11 +134,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
         </div>
         
        <hr>
-       <p class="text-right italic-text footer">
-        PiwigoMedia <a href="http://b.joaoubaldo.com/" target="_blank">blog</a> | <a href="https://github.com/joaoubaldo/piwigomedia" target="_blank">github</a>
+       <p class="text-center italic-text footer">
+        <a href="http://b.joaoubaldo.com/" target="_blank"><img src="img/wordpress.png"></a> | <a href="https://github.com/joaoubaldo/piwigomedia" target="_blank"><img src="img/github.png"></a> | <a href="https://www.facebook.com/Piwigomedia" target="_blank"><img src="img/facebook.png"></a>
        </p>
        
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+       <script src="js/jquery-1.11.1.min.js"></script>
        <script type='text/javascript' src='js/bootstrap.min.js'></script>
     </body>
 </html>
