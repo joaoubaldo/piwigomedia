@@ -27,15 +27,12 @@ function register_piwigomedia_tinymce_plugin($plugin_array) {
 }
 
 function register_piwigomedia_plugin() {
-    if (!current_user_can('edit_posts') && !current_user_can('edit_pages'))
-        return;
-    if (get_user_option('rich_editing') != 'true')
-        return;
-
     load_plugin_textdomain('piwigomedia', null, 'piwigomedia/languages/');
-
-    add_filter('mce_buttons', 'register_piwigomedia_tinymce_button');
-    add_filter('mce_external_plugins', 'register_piwigomedia_tinymce_plugin');
+    
+    if ((current_user_can('edit_posts') && current_user_can('edit_pages')) || get_user_option('rich_editing') == 'true') {
+        add_filter('mce_buttons', 'register_piwigomedia_tinymce_button');
+        add_filter('mce_external_plugins', 'register_piwigomedia_tinymce_plugin');
+    }
 
     add_shortcode('pwg-image', 'pwg_image');
     add_shortcode('pwg-category', 'pwg_category');
