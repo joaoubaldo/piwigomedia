@@ -29,7 +29,7 @@ function register_piwigomedia_tinymce_plugin($plugin_array) {
 function register_piwigomedia_plugin() {
     load_plugin_textdomain('piwigomedia', null, 'piwigomedia/languages/');
     
-    if ((current_user_can('edit_posts') && current_user_can('edit_pages')) || get_user_option('rich_editing') == 'true') {
+    if (current_user_can('edit_posts') || current_user_can('edit_pages') || get_user_option('rich_editing') == 'true') {
         add_filter('mce_buttons', 'register_piwigomedia_tinymce_button');
         add_filter('mce_external_plugins', 'register_piwigomedia_tinymce_plugin');
     }
