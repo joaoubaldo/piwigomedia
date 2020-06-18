@@ -49,7 +49,7 @@ function register_piwigomedia_plugin() {
 function load_piwigomedia_headers() {
     wp_enqueue_style('piwigomedia', WP_PLUGIN_URL.'/piwigomedia/css/piwigomedia.css', false, '1.0', 'all');
     wp_enqueue_style('galleria', WP_PLUGIN_URL.'/piwigomedia/js/galleria/themes/classic/galleria.classic.css', false, '1.0', 'all');
-    wp_register_script('galleria-min', plugins_url( '/js/galleria/galleria-1.2.9.min.js', __FILE__ ) );
+    wp_register_script('galleria-min', WP_PLUGIN_URL.'/piwigomedia/js/galleria/galleria-1.2.9.min.js', __FILE__ );
     wp_enqueue_script('galleria-min');
 }
 
@@ -137,7 +137,7 @@ if (count($res->result->images) > 0) {
 	}
 	$out .= "</div>";
 }
-    return "$out <script>Galleria.loadTheme('wp-content/plugins/piwigomedia/js/galleria/themes/classic/galleria.classic.min.js');Galleria.run('#piwigomedia-gallery-$id');</script>";
+    return "$out <script>Galleria.loadTheme('".WP_PLUGIN_URL."'/piwigomedia/js/galleria/themes/classic/galleria.classic.min.js');Galleria.run('#piwigomedia-gallery-$id');</script>";
 }
 
 
